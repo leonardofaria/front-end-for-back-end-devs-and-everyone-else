@@ -1,0 +1,70 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800';
+
+body {
+  background: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.reveal {
+  color: #555;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #303030;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Serif", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  text-transform: inherit;
+}
+
+.reveal h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow: none;
+}
+
+.hljs {
+  background: transparent !important;
+}
+
+.reveal .progress {
+    background-color: #fafafa;
+}
+
+.reveal .progress span {
+    background-color: #FF0044;
+}
+
+.reveal table th, .reveal table td {
+  border-bottom: 0;
+}
+
+.reveal section img {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal a, .reveal a:hover {
+  color: #555;
+  border-bottom: 3px solid #FF0044;
+}
+
+.primary {
+  color: #303030 !important;
+}
+
+.reveal h1 + ul,
+.reveal h2 + ul,
+.reveal h3 + ul {
+  margin-top: 1em;
+}

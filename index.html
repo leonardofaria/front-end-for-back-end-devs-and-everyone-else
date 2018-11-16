@@ -4,13 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Front end for Back end devs and anyone else - Leonardo Faria</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/github.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -22,28 +23,143 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+					<h1>Front end for Back end devs and anyone else</h1>
+          <h2>Leonardo Faria</h2>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+				<section>
+					<h2>Goal</h2>
+					<h3>Share resources about front end, explain how the pieces connect to each other and suggest ways to learn</h3>
+				</section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+				<section>
+          <h1>Agenda</h1>
+					<ul>
+						<li>CSS</li>
+						<li>SASS</li>
+						<li>JS</li>
+						<li>Browser</li>
+						<li>Additional resources</li>
+					</ul>
+        </section>
+
+        <section>
+          <h1>CSS</h1>
+					<ul>
+						<li><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> (<a href="https://www.youtube.com/watch?v=IO-4Z32O--c">video</a>)</li>
+						<li>Flexbox
+							<ul>
+								<li><a href="https://flexbox.io/">Wesbos course</a></li>
+								<li><a href="https://flexboxfroggy.com/">Flexbox Froggy Game</a></li>
+							</ul>
+						</li>
+						<li><a href="https://cssgrid.io/">Grid</a></li>
+					</ul>
+        </section>
+
+				<section>
+					<h1>SASS: features</h1>
+					<ul>
+						<li>Variables</li>
+						<li>Nesting</li>
+						<li>Partials</li>
+						<li>Extend / Inheritance</li>
+						<li>Mixins</li>
+						<li>Operators</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>SASS: resources</h1>
+					<ul>
+						<li><a href="https://sass-lang.com/guide">SASS basics</a></li>
+						<li><a href="https://scotch.io/tutorials/getting-started-with-sass">Another tutorial</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>SASS: example</h1>
+
+					<pre class="language-scss"><code>
+	$toga-colors: (
+	  color-blue-1: #DEF4FF,
+	  color-blue-3: #75D9FD,
+	);
+
+	@each $key, $value in $toga-colors {
+	  .background-#{$key} {
+	    background: $value;
+	  }
+	}
+
+	// .background-color-blue-1 {
+	//   background: #DEF4FF;
+	// }
+          </code></pre>
+				</section>
+
+				<section>
+          <h1>JS</h1>
+					<ul>
+						<li>
+							<a href="https://frontendmasters.com/courses/jsnext-es6/">ES2015</a>
+							<ul>
+								<li>spread operators, classes, modules, promises</li>
+							</ul>
+						</li>
+						<li><a href="https://frontendmasters.com/courses/webpack-fundamentals/">Webpack</a></li>
+					</ul>
+        </section>
+
+				<section>
+					<h1>Browser</h1>
+					<ul>
+						<li><a href="https://caniuse.com">Can I Use</a></li>
+            <li><a href="https://umaar.com/dev-tips/">/dev tips</a></li>
+					</ul>
+				</section>
+
+        <section>
+          <img src="https://umaar.com/assets/images/dev-tips/store-global-dom-tree.gif" />
+        </section>
+
+				<section>
+					<h1>Additional resources</h1>
+					<ul>
+						<li><a href="https://frontendmasters.com/courses/web-accessibility/">Web Accessibility course</a></li>
+						<li><a href="https://frontendmasters.com/">Frontend Masters</a></li>
+						<li><a href="https://syntax.fm/">Syntax.fm</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Questions? 🤔</h1>
+          <h2>Thank you 🙏</h2>
+				</section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        progress: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
